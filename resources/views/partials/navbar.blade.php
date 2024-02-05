@@ -18,16 +18,7 @@
 </nav>
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: sans-serif;
-    overflow-x: hidden;
-  }
-
+  
   /* navbar */
   nav {
     padding-top: 10px;
