@@ -27,7 +27,7 @@
         z-index: -1;
     }
 
-    header img:first-child {
+    header img:first-child, img:nth-child(4) {
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -36,16 +36,9 @@
         width: 100%;
     }
 
-    header img:nth-child(4) {
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        height: 100vh;
-        width: 100vh;
-    }
-
-    header .title {
+   
+    header .title, .subtitle {
+        color: white;
         padding: 0;
         transform: translateY(25vh);
         position: relative;
@@ -58,16 +51,7 @@
     }
 
     header .subtitle {
-        padding: 0;
         transform: translateY(22vh);
-        color: white;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        z-index: 1;
     }
 
     section {
@@ -76,9 +60,8 @@
     }
 
     section .box-container {
-        color: white;
         position: relative;
-        transform: translateY(-200vh);
+        color: white;
         translate: 30vh 0;
         display: flex;
         justify-content: start;
