@@ -1,49 +1,105 @@
 @extends('layouts.mainlayout')
 
 @section('container')
-<div class="wrapper">
-    <header>
-        <img src="{{ asset('storage/lighthouse.jpg') }}" alt="lighthouse.jpg">
-        <img src="{{ asset('storage/seaunder.jpg') }}" alt="seaunder.jpg">
-        <h1 class="title">Plate</h1>
-        <h5 class="subtitle">for your template</h5>
-    </header>
+<header>
+    <img src="{{ asset('storage/lighthouse.jpg') }}" alt="lighthouse.jpg">
+    <h1 class="title">Plate</h1>
+    <h5 class="subtitle">for your template</h5>
+</header>
 
-    <section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fuga mollitia, aperiam deserunt quos reiciendis esse recusandae quasi debitis facere error dolore maiores veniam. Tempora corporis quidem distinctio debitis fugit?
-    </section>
+<section>
+    <img src="{{ asset('storage/seaunder.jpg') }}" alt="seaunder.jpg">
+    <div class="box-container">
+        <h5>What is Plate?</h5>
+    </div>
 
-    <a href="https://www.freepik.com/free-vector/sea-background-video-conferencing_9470396.htm#query=sea%20background&position=3&from_view=keyword&track=ais&uuid=7fdd85a2-28df-49e2-b3b3-f16cede379b5">Image by pikisuperstar</a> on Freepik
+</section>
 
-</div>
-
-
-
+<a href="https://www.freepik.com/free-vector/sea-background-video-conferencing_9470396.htm#query=sea%20background&position=3&from_view=keyword&track=ais&uuid=7fdd85a2-28df-49e2-b3b3-f16cede379b5">Image by pikisuperstar</a> on Freepik
 <style>
-    .title{
+    .title {
         font-size: 7rem;
         color: white;
         text-shadow: 0 0 5px black;
     }
 
-    .wrapper{
+    header {
+        z-index: -1;
+    }
+
+    header img:first-child {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
+        width: 100%;
     }
 
-    .wrapper img:first-child {
+    header img:nth-child(4) {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100vh;
         width: 100vh;
     }
 
-    .wrapper img:nth-child(2) {
-        width: 100vh;
+    header .title {
+        padding: 0;
+        transform: translateY(25vh);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        z-index: 1;
     }
 
-    section{
+    header .subtitle {
+        padding: 0;
+        transform: translateY(22vh);
+        color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        z-index: 1;
+    }
+
+    section {
         font-size: 2rem;
-        padding: 2rem;
         font-family: sans-serif;
     }
+
+    section .box-container {
+        color: white;
+        position: relative;
+        transform: translateY(-200vh);
+        translate: 30vh 0;
+        display: flex;
+        justify-content: start;
+    }
+
+
+    @media screen and (max-width: 760px) {
+        /* Ukuran tablet */
+        section .box-container {
+            translate: 0;
+            transform: translateY(0px);
+        }
+    }
+
+    /* Ukuran mobile */
+    @media screen and (max-width: 576px) {
+        section .box-container {
+            translate: 0;
+            transform: translateY(0px);
+        }
+    }
+
 </style>
 @endsection

@@ -17,7 +17,9 @@
   <!--NAVBAR -->
   @include('partials.navbar')
 
-  @yield('container')
+  <div class="wrapper">
+    @yield('container')
+  </div>
 
   <style>
     * {
@@ -29,6 +31,13 @@
       font-family: sans-serif;
       overflow-x: hidden;
     }
+
+    .wrapper {
+      overflow-x: hidden;
+      perspective: 10px;
+      position: relative;
+    }
+
   </style>
 
 </body>

@@ -1,168 +1,56 @@
-<nav>
-  <div class="logo">
-    <h4>Plate</h4>
+<nav class="navbar navbar-expand-lg d-flex justify-content-around" style="background-color: #7F27FF;">
+  <div class="container-fluid px-5">
+    <a class="navbar-brand" href="#">Plate</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
-  <ul>
-    <li><button><a href="">Home</a></button></li>
-    <li><button><a href="">About</a></button></li>
-    <li><button><a href="">Template</a></button></li>
-    <li><button><a href="">About Me</a></button></li>
-  </ul>
 
-  <div class="menu-toogle">
-    <input type="checkbox">
-    <span></span>
-    <span></span>
-    <span></span>
+  <div class="collapse navbar-collapse navbar-buttons" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link btn active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn" href="#">Template</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
 <style>
-  
-  /* navbar */
-  nav {
-    padding-top: 10px;
+  .navbar-buttons {
     display: flex;
-    background-color: darkorchid;
-    justify-content: space-around;
-    color: whitesmoke;
-    height: 45px;
-    align-items: center;
+    background-color: #9F70FD;
+    padding-right: 20px;
+    /* width: 100%; */
   }
 
-  nav .logo {
-    letter-spacing: 3px;
+  .active {
+    border: 0;
   }
 
-  nav ul {
-    display: flex;
-    list-style: none;
-    width: 40%;
-    justify-content: space-between;
+  .nav-item {
+    padding: 0 20px;
   }
 
-  nav ul li a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 0.8em;
-  }
-
-  nav ul li a:hover {
-    color: white;
-  }
-
-  nav ul li button {
-    top: 2px 0;
-    height: 45px;
+  .nav-item:hover {
+    background-color: #FDBF60;
     border-radius: 5px;
-    background-color: darkorchid;
-    border-style: none;
   }
 
-  nav ul li button:hover {
-    background-color: plum;
-  }
-
-  
-  /* Hamburger Toogler */
-  .menu-toogle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  .menu-toogle input {
-    position: absolute;
-    width: 40px;
-    height: 30px;
-    left: -6px;
-    top: -3px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-  }
-
-  .menu-toogle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: plum;
-    border-radius: 3px;
-    transition: all 0.4s;
-  }
-
-
-  /* Hamburger animation */
-  .menu-toogle span:nth-child(2) {
-    transform-origin: 0 0;
-  }
-
-  .menu-toogle span:last-child {
-    transform-origin: 0 100%;
-  }
-
-  .menu-toogle input:checked~span:nth-child(2) {
-    background-color: white;
-    transform: rotate(45deg) translate(-1px, -1px);
-  }
-
-  .menu-toogle input:checked~span:nth-child(3) {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  .menu-toogle input:checked~span:last-child {
-    background-color: white;
-    transform: rotate(-45deg) translate(-1px, 0);
-  }
-
-
-  /* Responsive Breakpoint */
-  /* Ukuran tablet */
-  @media screen and (max-width: 760px) {
-    nav ul {
-      width: 50%;
-    }
-  }
-
-  /* Ukuran mobile */
-  @media screen and (max-width: 576px) {
-    nav {
-      padding-top: 4px;
-    }
-
-    .menu-toogle {
-      display: flex;
-    }
-
-    nav ul {
-      position: absolute;
-      right: 0;
-      top: 0;
-      flex-direction: column;
-      width: 40vh;
-      height: 65vh;
-      align-items: center;
-      justify-content: space-evenly;
-      z-index: -1;
-      background-color: darkorchid;
-      transform: translateX(100%);
-      transition: all 0.5s;
-    }
-
-    nav ul.slide{
-      transform: translateX(0);
-    }
+  .slide-down {
+    transform: translateY(-3px);
   }
 </style>
 
-<script>
-  const menuToogle = document.querySelector('.menu-toogle input');
-  const nav = document.querySelector('nav ul');
 
-  menuToogle.addEventListener('click', function(){
-    nav.classList.toggle('slide');
-  });
+<script>
+  let toogler = document.querySelector('.navbar-toggler');
+  document.addEventListener('click', function() {
+    toogler.classList.toggle("slide-down");
+  })
 </script>
