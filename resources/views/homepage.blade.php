@@ -10,7 +10,13 @@
 <section>
     <img src="{{ asset('storage/seaunder.jpg') }}" alt="seaunder.jpg">
     <div class="box-container">
-        <h5>What is Plate?</h5>
+        <div class="boxOne">
+            <h2 style="color: #FFF6E9; font-size:100px">What is Plate?</h2>
+        </div>
+
+        <div class="boxTwo">
+            <h5 style="color: #BBE2EC; font-size:30px">A multipurpose template for your website functionality such as forms, login, etc.</h5>
+        </div>
     </div>
 
 </section>
@@ -27,7 +33,8 @@
         z-index: -1;
     }
 
-    header img:first-child, img:nth-child(4) {
+    header img:first-child,
+    img:nth-child(4) {
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -36,8 +43,9 @@
         width: 100%;
     }
 
-   
-    header .title, .subtitle {
+
+    header .title,
+    .subtitle {
         color: white;
         padding: 0;
         transform: translateY(25vh);
@@ -61,28 +69,36 @@
 
     section .box-container {
         position: relative;
-        color: white;
-        translate: 30vh 0;
         display: flex;
+        transform: translateY(-200vh);
+        z-index: 2;
+    }
+
+    .box-container .boxOne {
+        transform: translateX(10vw);
         justify-content: start;
+        font-family: "Lobster", sans-serif;
+        font-style: normal;
+    }
+
+    .box-container .boxTwo {
+        transform: translateY(30vh);
+        justify-content: end;
+        font-family: sans-serif;
+        font-weight: 100;
     }
 
 
+     /* Ukuran tablet */
     @media screen and (max-width: 760px) {
-        /* Ukuran tablet */
-        section .box-container {
-            translate: 0;
-            transform: translateY(0px);
-        }
+
+       
+        section .box-container {}
     }
 
     /* Ukuran mobile */
     @media screen and (max-width: 576px) {
-        section .box-container {
-            translate: 0;
-            transform: translateY(0px);
-        }
+        section .box-container {}
     }
-
 </style>
 @endsection
