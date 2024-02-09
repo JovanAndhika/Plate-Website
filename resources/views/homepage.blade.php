@@ -3,22 +3,23 @@
 @section('container')
 <header>
     <img src="{{ asset('storage/lighthouse.jpg') }}" alt="lighthouse.jpg">
-    <h1 class="title">Plate</h1>
-    <h5 class="subtitle">for your template</h5>
+    <div class="d-grid gap-1">
+    <h1 class="p-1 title">Plate</h1>
+    <h5 class="p-1 subtitle">for your template</h5>
+    </div>
 </header>
 
 <section>
     <img src="{{ asset('storage/seaunder.jpg') }}" alt="seaunder.jpg">
     <div class="box-container">
-        <div class="boxOne">
+        <div class="boxOne col-md-6">
             <h2 style="color: #FFF6E9; font-size:100px">What is Plate?</h2>
-        </div>
-
-        <div class="boxTwo">
-            <h5 style="color: #BBE2EC; font-size:30px">A multipurpose template for your website functionality such as forms, login, etc.</h5>
         </div>
     </div>
 
+    <div class="boxTwo col-md-6">
+        <h5 style="color: #BBE2EC; font-size:30px">A multipurpose template for your website functionality such as forms, login, etc.</h5>
+    </div>
 </section>
 
 <a href="https://www.freepik.com/free-vector/sea-background-video-conferencing_9470396.htm#query=sea%20background&position=3&from_view=keyword&track=ais&uuid=7fdd85a2-28df-49e2-b3b3-f16cede379b5">Image by pikisuperstar</a> on Freepik
@@ -58,8 +59,8 @@
         z-index: 1;
     }
 
-    header .subtitle {
-        transform: translateY(22vh);
+    .subtitle{
+        transform: translateY(20vh);
     }
 
     section {
@@ -70,12 +71,11 @@
     section .box-container {
         position: relative;
         display: flex;
-        transform: translateY(-200vh);
+        transform: translateY(-10vh);
         z-index: 2;
     }
 
     .box-container .boxOne {
-        transform: translateX(10vw);
         justify-content: start;
         font-family: "Lobster", sans-serif;
         font-style: normal;
@@ -89,16 +89,15 @@
     }
 
 
-     /* Ukuran tablet */
+    /* Ukuran tablet */
     @media screen and (max-width: 760px) {
 
-       
-        section .box-container {}
     }
 
-    /* Ukuran mobile */
+    
+    /* Ukuran smartphone */
     @media screen and (max-width: 576px) {
-        section .box-container {}
+        
     }
 </style>
 @endsection

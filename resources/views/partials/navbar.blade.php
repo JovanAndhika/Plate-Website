@@ -6,16 +6,19 @@
     </button>
   </div>
 
-  <div class="collapse navbar-collapse navbar-buttons" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse navbar-buttons justify-content-center" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
         <a class="nav-link btn active" aria-current="page" href="#">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link btn" href="#">Template</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link btn" href="#">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn" href="#">Template</a>
+        <a class="nav-link btn" href="#">Contact</a>
       </li>
     </ul>
   </div>
@@ -25,8 +28,8 @@
   .navbar-buttons {
     display: flex;
     background-color: #9F70FD;
-    padding-right: 20px;
-    /* width: 100%; */
+    width: 40%;
+    font-size: medium;
   }
 
   .active {
