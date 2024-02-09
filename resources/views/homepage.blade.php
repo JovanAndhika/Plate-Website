@@ -3,21 +3,18 @@
 @section('container')
 <header>
     <img src="{{ asset('storage/lighthouse.jpg') }}" alt="lighthouse.jpg">
-    <div class="d-grid gap-1">
     <h1 class="p-1 title">Plate</h1>
     <h5 class="p-1 subtitle">for your template</h5>
-    </div>
 </header>
 
 <section>
-    <img src="{{ asset('storage/seaunder.jpg') }}" alt="seaunder.jpg">
-    <div class="box-container">
-        <div class="boxOne col-md-6">
-            <h2 style="color: #FFF6E9; font-size:100px">What is Plate?</h2>
-        </div>
+    <img src="{{ asset('storage/seaunder.jpg') }}" alt="seaunder.jpg" class="lighthouse" style="z-index: 1; width: 100%; height:100vh;">
+
+    <div class="box-container boxOne col-md-6">
+        <h2 style="color: #FFF6E9; font-size:100px">What is Plate?</h2>
     </div>
 
-    <div class="boxTwo col-md-6">
+    <div class="box-container boxTwo col-md-6">
         <h5 style="color: #BBE2EC; font-size:30px">A multipurpose template for your website functionality such as forms, login, etc.</h5>
     </div>
 </section>
@@ -34,23 +31,18 @@
         z-index: -1;
     }
 
-    header img:first-child,
-    img:nth-child(4) {
-        position: absolute;
+    header img:first-child{
         justify-content: center;
-        align-items: center;
         align-content: center;
         height: 100vh;
         width: 100%;
     }
 
-
     header .title,
     .subtitle {
         color: white;
         padding: 0;
-        transform: translateY(25vh);
-        position: relative;
+        transform: translateY(-78vh);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,8 +51,8 @@
         z-index: 1;
     }
 
-    .subtitle{
-        transform: translateY(20vh);
+    .subtitle {
+        transform: translateY(-81vh);
     }
 
     section {
@@ -68,36 +60,44 @@
         font-family: sans-serif;
     }
 
-    section .box-container {
-        position: relative;
-        display: flex;
-        transform: translateY(-10vh);
-        z-index: 2;
+    section img:first-child{
+        z-index: -1;
+        transform: translateY(-30vh);
     }
 
-    .box-container .boxOne {
+
+    section .box-container {
+        display: flex;
+        z-index: 1;
+    }
+
+    .boxOne {
         justify-content: start;
         font-family: "Lobster", sans-serif;
         font-style: normal;
+        translate: 10vw -118vh;
     }
 
-    .box-container .boxTwo {
-        transform: translateY(30vh);
+    .boxTwo {
         justify-content: end;
         font-family: sans-serif;
-        font-weight: 100;
     }
 
 
     /* Ukuran tablet */
     @media screen and (max-width: 760px) {
+        section .boxOne {
+            /* transform: translateY(200vh); */
+            translate: 3vw -115vh;
+        }
 
     }
 
-    
     /* Ukuran smartphone */
     @media screen and (max-width: 576px) {
-        
+        section .boxOne {
+            translate: 0 -118vh;
+        }
     }
 </style>
 @endsection
