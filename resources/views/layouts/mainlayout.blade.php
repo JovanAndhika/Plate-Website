@@ -36,9 +36,8 @@
     }
 
     .wrapper {
+      align-content: flex-start;
       overflow-x: hidden;
-      perspective: 10px;
-      position: relative;
     }
   </style>
 
