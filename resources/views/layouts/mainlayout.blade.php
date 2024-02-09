@@ -20,7 +20,7 @@
   <!--NAVBAR -->
   @include('partials.navbar')
 
-  <div class="wrapper">
+  <div class="wrapper gap-0">
     @yield('container')
   </div>
 
