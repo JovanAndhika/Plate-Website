@@ -25,6 +25,10 @@
 </nav>
 
 <style>
+  nav{
+    transform: translateY(-25px);
+  }
+
   .navbar-buttons {
     display: flex;
     background-color: #9F70FD;

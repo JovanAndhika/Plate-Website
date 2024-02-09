@@ -13,7 +13,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">;
-
 </head>
 
 <body>
@@ -34,6 +33,7 @@
     body {
       font-family: sans-serif;
       overflow-x: hidden;
+      background-color: #FDBF60;
     }
 
     .wrapper {

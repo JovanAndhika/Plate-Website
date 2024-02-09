@@ -21,36 +21,33 @@
         <h1 style="color:#FFF6E9">How to Use</h1>
         <ul>
             <li style="--accent-color:#41516C">
-                <div class="date">2002</div>
-                <div class="title">Title 1</div>
-                <div class="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+                <div class="date">Step One</div>
+                <div class="title">Click navbar template</div>
+                <div class="descr">Dropdown and choose for what role is the website!</div>
             </li>
             <li style="--accent-color:#FBCA3E">
-                <div class="date">2007</div>
-                <div class="title">Title 2</div>
-                <div class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
+                <div class="date">Step Two</div>
+                <div class="title">Select parts</div>
+                <div class="descr">Select what template you want to use</div>
             </li>
             <li style="--accent-color:#E24A68">
-                <div class="date">2012</div>
-                <div class="title">Title 3</div>
-                <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
-            </li>
-            <li style="--accent-color:#1B5F8C">
-                <div class="date">2017</div>
-                <div class="title">Title 4</div>
-                <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
-            </li>
-            <li style="--accent-color:#4CADAD">
-                <div class="date">2022</div>
-                <div class="title">Title 5</div>
-                <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+                <div class="date">Last Step</div>
+                <div class="title">Click go to link</div>
+                <div class="descr">Ready to go to make website</div>
             </li>
         </ul>
-        <div class="credits"><a target="_blank" href="https://www.freepik.com/free-vector/infographic-template-with-yearly-info_1252895.htm">inspired by</a></div>
     </div>
 </section>
 
-<a href="https://www.freepik.com/free-vector/sea-background-video-conferencing_9470396.htm#query=sea%20background&position=3&from_view=keyword&track=ais&uuid=7fdd85a2-28df-49e2-b3b3-f16cede379b5">Image by pikisuperstar</a> on Freepik
+<footer>
+    <div class="credits container">
+        <a style="color: #7F27FF;" target="_blank" href="https://www.freepik.com/free-vector/infographic-template-with-yearly-info_1252895.htm">inspired by</a>
+        <a style="color: #7F27FF;" href="https://www.freepik.com/free-vector/sea-background-video-conferencing_9470396.htm#query=sea%20background&position=3&from_view=keyword&track=ais&uuid=7fdd85a2-28df-49e2-b3b3-f16cede379b5">Image by pikisuperstar</a>
+        <br>
+    </div>
+</footer>
+
+
 <style>
     img:first-child {
         position: relative;
@@ -109,10 +106,10 @@
 
     section .timeline {
         position: absolute;
-        translate: 0 -80vh;
+        translate: 16vw -80vh;
     }
 
- 
+
     .timeline h1 {
         text-align: center;
     }
@@ -208,7 +205,7 @@
     /* title descr */
     .timeline ul li .title,
     .timeline ul li .descr {
-        background: var(--bgColor);
+        background: #EFECEC;
         position: relative;
         padding-inline: 1.5rem;
     }
@@ -285,14 +282,19 @@
         }
     }
 
-    .credits {
-        margin-top: 1rem;
-        text-align: right;
+    footer {
+        position: absolute;
+        translate: 0 0;
     }
 
-    .credits a {
-        color: var(--color);
+    footer .credits a{
+        margin: 0 0;
+        display: flex;
+        padding: 0 30px;
+        margin-top: 1rem;
+        text-align: left;
     }
+
 
 
     /* Ukuran tablet */
