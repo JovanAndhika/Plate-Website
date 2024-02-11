@@ -15,6 +15,11 @@ class UserController extends Controller
         return view('homepage', ['title' => 'Home']);
     }
 
+    public function userFormOne(){
+        //
+        return view('user.forms.formOne', ['title' => 'Form One']);
+    }
+
     /**
      * Show the form for creating a new resource.
      */

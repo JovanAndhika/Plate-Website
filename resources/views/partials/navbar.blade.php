@@ -9,11 +9,25 @@
   <div class="collapse navbar-collapse navbar-buttons justify-content-center" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link btn active" aria-current="page" href="#">Home</a>
+        <a class="nav-link btn active" aria-current="page" href="{{ route('homepage') }}">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link btn" href="#">Template</a>
-      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          User
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="{{ route('formOne') }}">Forms</a></li>
+          <li><a class="dropdown-item" href="#">Logins</a></li>
+          <li><a class="dropdown-item" href="#">Soon</a></li>
+        </ul>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Admin
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Tables</a></li>
+          <li><a class="dropdown-item" href="#">Soon</a></li>
+        </ul>
       <li class="nav-item">
         <a class="nav-link btn" href="#">About</a>
       </li>
@@ -25,7 +39,7 @@
 </nav>
 
 <style>
-  nav{
+  nav {
     transform: translateY(-25px);
   }
 

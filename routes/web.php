@@ -18,5 +18,6 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', [UserController::class, 'index']);
+Route::get('/', [UserController::class, 'index'])->name('homepage');
+Route::get('/user/forms', [UserController::class, 'userFormOne'])->name('formOne');
 
