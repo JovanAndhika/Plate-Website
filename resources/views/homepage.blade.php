@@ -296,13 +296,90 @@
             text-align: left;
         }
 
+        /* Ukuran Laptop mini */
+        @media screen and (max-width: 1100px) {
+            header .title,
+            .subtitle {
+                translate: 45vw -71vh;
+            }
+
+            header .subtitle {
+                translate: 52vw -52vh;
+            }
+
+            section .boxOne {
+                translate: 3vw -160vh;
+            }
+
+            section .timeline {
+                position: absolute;
+                translate: 3vw -90vh;
+            }
+
+            section .boxTwo {
+                translate: 3vw -120vh;
+            }
+        }
+
 
 
         /* Ukuran tablet */
-        @media screen and (max-width: 760px) {}
+        @media screen and (max-width: 760px) {
+
+            header .title,
+            .subtitle {
+                translate: 14vw -71vh;
+            }
+
+            header .subtitle {
+                translate: 29vw -52vh;
+            }
+
+            section .boxOne {
+                translate: 3vw -160vh;
+            }
+
+            section .boxTwo {
+                translate: 3vw -120vh;
+            }
+
+            section .timeline {
+                position: absolute;
+                translate: 0vw -90vh;
+            }
+
+
+        }
 
         /* Ukuran smartphone */
-        @media screen and (max-width: 576px) {}
+        @media screen and (max-width: 576px) {
+
+            header .title,
+            .subtitle {
+                translate: 14vw -71vh;
+            }
+
+            header .subtitle {
+                translate: 29vw -52vh;
+            }
+
+            section .boxOne {
+                translate: 3vw -160vh;
+            }
+
+            section .boxTwo {
+                translate: 1vw -120vh;
+            }
+
+            section .timeline {
+                position: absolute;
+                translate: -3vw -95vh;
+            }
+
+            footer{
+                translate: 0 8vh;
+            };
+        }
 
         .wrapper {
             align-content: flex-start;

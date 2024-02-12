@@ -46,7 +46,7 @@
   .navbar-buttons {
     display: flex;
     background-color: #9F70FD;
-    width: 40%;
+    width: 100%;
     font-size: medium;
   }
 
