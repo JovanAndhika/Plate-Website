@@ -296,63 +296,43 @@
             text-align: left;
         }
 
-        /* Ukuran Laptop mini */
-        @media screen and (max-width: 1100px) {
+
+        /* Ukuran IPAD */
+        @media screen and (max-width: 1200px) {
+
             header .title,
             .subtitle {
                 translate: 45vw -71vh;
             }
 
             header .subtitle {
-                translate: 52vw -52vh;
+                translate: 50vw -60vh;
             }
 
             section .boxOne {
-                translate: 2vw -160vh;
+                translate: 2vw -78vh;
+            }
+
+            section .boxTwo {
+                translate: 2vw -60vh;
             }
 
             section .timeline {
                 position: absolute;
-                translate: -2vw -90vh;
+                translate: -2vw -45vh;
             }
 
-            section .boxTwo {
-                translate: 2vw -120vh;
-            }
-        }
 
 
-
-        /* Ukuran tablet */
-        @media screen and (max-width: 760px) {
-
-            header .title,
-            .subtitle {
-                translate: 14vw -71vh;
-            }
-
-            header .subtitle {
-                translate: 29vw -52vh;
-            }
-
-            section .boxOne {
-                translate: 0vw -160vh;
-            }
-
-            section .boxTwo {
-                translate: 1vw -120vh;
-            }
-
-            section .timeline {
+            footer {
                 position: absolute;
-                translate: 0vw -90vh;
+                translate: 0 0vh;
             }
-
-
         }
 
-        /* Ukuran smartphone */
-        @media screen and (max-width: 576px) {
+
+        /* Ukuran iphone */
+        @media screen and (max-width: 600px) {
 
             header .title,
             .subtitle {
@@ -376,9 +356,40 @@
                 translate: -3vw -95vh;
             }
 
-            footer{
-                translate: 0 8vh;
-            };
+            footer {
+                translate: 0 6vh;
+            }
+        }
+
+
+        /* Ukuran samsung s20 */
+        @media screen and (max-width: 450px) {
+
+            header .title,
+            .subtitle {
+                translate: 14vw -71vh;
+            }
+
+            header .subtitle {
+                translate: 29vw -52vh;
+            }
+
+            section .boxOne {
+                translate: 0vw -140vh;
+            }
+
+            section .boxTwo {
+                translate: 0vw -109vh;
+            }
+
+            section .timeline {
+                position: absolute;
+                translate: -3vw -80vh;
+            }
+
+            footer {
+                translate: 0 10vh;
+            }
         }
 
         .wrapper {
