@@ -19,5 +19,6 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/', [UserController::class, 'index'])->name('homepage');
-Route::get('/user/forms', [UserController::class, 'userFormOne'])->name('formOne');
+Route::get('/user/forms/formOne', [UserController::class, 'userFormOne'])->name('formOne');
+Route::get('/admin/tables/tableOne', [UserController::class, 'adminTableOne'])->name('tableOne');
 

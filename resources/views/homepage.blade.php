@@ -11,7 +11,7 @@
     <img src="{{ asset('storage/seaunder.jpg') }}" alt="seaunder.jpg" class="lighthouse" style="width:1600px;">
     <section>
         <div class="box-container boxOne col-md-6">
-            <h2 style="color: #FFF6E9; font-size:100px">What is Plate?</h2>
+            <h2 style="color: #FFF6E9; font-size:90px">What is Plate?</h2>
         </div>
 
         <div class="box-container boxTwo col-md-6">
@@ -308,16 +308,16 @@
             }
 
             section .boxOne {
-                translate: 3vw -160vh;
+                translate: 2vw -160vh;
             }
 
             section .timeline {
                 position: absolute;
-                translate: 3vw -90vh;
+                translate: -2vw -90vh;
             }
 
             section .boxTwo {
-                translate: 3vw -120vh;
+                translate: 2vw -120vh;
             }
         }
 
@@ -336,11 +336,11 @@
             }
 
             section .boxOne {
-                translate: 3vw -160vh;
+                translate: 0vw -160vh;
             }
 
             section .boxTwo {
-                translate: 3vw -120vh;
+                translate: 1vw -120vh;
             }
 
             section .timeline {
@@ -364,11 +364,11 @@
             }
 
             section .boxOne {
-                translate: 3vw -160vh;
+                translate: 0vw -160vh;
             }
 
             section .boxTwo {
-                translate: 1vw -120vh;
+                translate: 0vw -120vh;
             }
 
             section .timeline {

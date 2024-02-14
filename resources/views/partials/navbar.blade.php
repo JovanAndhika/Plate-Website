@@ -25,7 +25,7 @@
           Admin
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Tables</a></li>
+          <li><a class="dropdown-item" href="{{ route('tableOne') }}">Tables</a></li>
           <li><a class="dropdown-item" href="#">Soon</a></li>
         </ul>
       <li class="nav-item">
@@ -46,7 +46,7 @@
   .navbar-buttons {
     display: flex;
     background-color: #9F70FD;
-    width: 100%;
+    /* width: 60%; */
     font-size: medium;
   }
 
