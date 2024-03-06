@@ -20,13 +20,13 @@
           <li><a class="dropdown-item" href="#">Logins</a></li>
           <li><a class="dropdown-item" href="#">Soon</a></li>
         </ul>
-        <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Admin
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="{{ route('tableOne') }}">Tables</a></li>
-          <li><a class="dropdown-item" href="#">Soon</a></li>
+          <li><a class="dropdown-item" href="{{ route('welcome') }}">Tables</a></li>
+          <li><a class="dropdown-item" href="{{ route('kedaiKopi') }}">Kedai Kopi</a></li>
         </ul>
       <li class="nav-item">
         <a class="nav-link btn" href="#">About</a>
@@ -39,9 +39,9 @@
 </nav>
 
 <style>
-  nav {
-    transform: translateY(-25px);
-  }
+  /* nav {
+    transform: translateY(-10px);
+  } */
 
   .navbar-buttons {
     display: flex;

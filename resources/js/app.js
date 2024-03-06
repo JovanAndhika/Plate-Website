@@ -1,2 +1,2 @@
 import './bootstrap';
-import './components/reactTableOne';
+import './components/HelloReact.jsx';

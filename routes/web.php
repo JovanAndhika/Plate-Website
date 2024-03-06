@@ -14,11 +14,15 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/welcome', function () {
+Route::get('/cobareact', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/', [UserController::class, 'index'])->name('homepage');
 Route::get('/user/forms/formOne', [UserController::class, 'userFormOne'])->name('formOne');
-Route::get('/admin/tables/tableOne', [UserController::class, 'adminTableOne'])->name('tableOne');
+Route::get('/admin/kedaiKopi', [UserController::class, 'adminKedaiKopi'])->name('kedaiKopi');
+
+Route::get('/about', function(){
+    return view('admin.tables.kedaiKopi');
+});
 

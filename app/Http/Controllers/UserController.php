@@ -20,8 +20,9 @@ class UserController extends Controller
         return view('user.forms.formOne', ['title' => 'Form One']);
     }
 
-    public function adminTableOne(){
+
+    public function adminKedaiKopi(){
         //
-        return view('admin.tables.tableOne', ['title' => 'Table One']);
+        return view('admin.tables.kedaiKopi', ['title' => 'Kedai Kopi']);
     }
 }
