@@ -17,15 +17,13 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="{{ route('formOne') }}">Forms</a></li>
-          <li><a class="dropdown-item" href="#">Logins</a></li>
-          <li><a class="dropdown-item" href="#">Soon</a></li>
         </ul>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Admin
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="{{ route('welcome') }}">Tables</a></li>
+          <li><a class="dropdown-item" href="{{ route('formOne') }}">Tables</a></li>
           <li><a class="dropdown-item" href="{{ route('kedaiKopi') }}">Kedai Kopi</a></li>
         </ul>
       <li class="nav-item">

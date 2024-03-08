@@ -18,7 +18,7 @@
             <h5 style="color: #BBE2EC; font-size:30px">A multipurpose template for your website functionality such as forms, login, etc.</h5>
         </div>
 
-        <div class="timeline">
+        <div id="use-manual" class="timeline">
             <h1 style="color:#FFF6E9">How to Use</h1>
             <ul>
                 <li style="--accent-color:#41516C">
